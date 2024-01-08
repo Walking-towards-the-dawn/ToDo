@@ -17,6 +17,12 @@ function addTask() {
 	saveDate();
 }
 
+function handleKeyPress(event) {
+	if (event.key === 'Enter') {
+		addTask();
+	}
+}
+
 listContainer.addEventListener(
 	'click',
 	function (e) {
