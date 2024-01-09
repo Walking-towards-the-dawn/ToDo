@@ -7,8 +7,7 @@ function addTask() {
 	} else {
 		let li = document.createElement('li');
 		li.innerHTML = inputBox.value;
-
-		// Додаємо на початок списку
+		
 		listContainer.insertBefore(li, listContainer.firstChild);
 
 		let span = document.createElement('span');
