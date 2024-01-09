@@ -7,7 +7,9 @@ function addTask() {
 	} else {
 		let li = document.createElement('li');
 		li.innerHTML = inputBox.value;
-		listContainer.appendChild(li);
+
+		// Додаємо на початок списку
+		listContainer.insertBefore(li, listContainer.firstChild);
 
 		let span = document.createElement('span');
 		span.innerHTML = '';
@@ -18,7 +20,7 @@ function addTask() {
 }
 
 function handleKeyPress(event) {
-	if (event.key === 'Enter') {
+	if (event.key === 'Enter' && document.activeElement === inputBox) {
 		addTask();
 	}
 }
