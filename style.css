@@ -137,6 +137,10 @@ ul li span:hover {
 }
 
 @media (max-width: 500px) {
+	.container {
+		padding-top: 0.625rem;
+	}
+
 	.todo {
 		margin: 0.9375rem 0;
 	}
